@@ -1,0 +1,19 @@
+# Example sshd_config file
+
+# Authentication:
+PermitRootLogin no
+PubkeyAuthentication yes
+PasswordAuthentication yes
+
+# Port to listen on
+Port 22
+
+# Use PAM authentication
+UsePAM yes
+
+# Logging
+SyslogFacility AUTH
+LogLevel INFO
+
+# Allow only specified users to login
+AllowUsers yourusername
